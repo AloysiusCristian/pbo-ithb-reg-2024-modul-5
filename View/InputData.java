@@ -307,13 +307,12 @@ public class InputData {
                 String berlakuHinggaData = berlakuHingga.getText();
                 String kotaPembuatanData = kotaPembuatan.getText();
                 String tanggalPembuatanData = Calendar.getInstance().getTime().toString();
-                // nikData.isEmpty() || namaData.isEmpty() || tempatLahirData.isEmpty() || tanggalLahirData.isEmpty()
-                // || jenisKelaminData.isEmpty() || golonganDarahData.isEmpty() || alamatData.isEmpty() || rtrwData.isEmpty()
-                // || kelDesaData.isEmpty() || kecamatanData.isEmpty() || agamaData.isEmpty() || statusPerkawinanData.isEmpty()
-                // || pekerjaanData.isEmpty() || negaraAsalData.isEmpty() || berlakuHinggaData.isEmpty() || kotaPembuatanData.isEmpty()
-                // || tanggalPembuatanData.isEmpty() || profilPath.isEmpty() || ttdPath.isEmpty()
-                //Bagian input file masih tidak jalan
-                if (nikData.isEmpty()) {
+                
+                if (nikData.isEmpty() || namaData.isEmpty() || tempatLahirData.isEmpty() || tanggalLahirData.isEmpty()
+                || jenisKelaminData.isEmpty() || golonganDarahData.isEmpty() || alamatData.isEmpty() || rtrwData.isEmpty()
+                || kelDesaData.isEmpty() || kecamatanData.isEmpty() || agamaData.isEmpty() || statusPerkawinanData.isEmpty()
+                || pekerjaanData.isEmpty() || negaraAsalData.isEmpty() || berlakuHinggaData.isEmpty() || kotaPembuatanData.isEmpty()
+                || tanggalPembuatanData.isEmpty() || profilPath.isEmpty() || ttdPath.isEmpty()) {
                     JOptionPane.showMessageDialog(null, "Ada field yang tidak terisi", "Error", JOptionPane.ERROR_MESSAGE);
                 }
                 else{
